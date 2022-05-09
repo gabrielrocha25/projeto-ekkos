@@ -1,0 +1,13 @@
+.head {
+  background-color: var(--cor-4);
+  padding: 60px 50px;
+}
+.head span {
+  font-size: 1.5rem;
+  color: var(--cor-1);
+}
+.head h1 {
+  font-weight: bold;
+  font-size: 4.5rem;
+  color: var(--cor-0);
+}

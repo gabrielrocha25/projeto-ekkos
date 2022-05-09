@@ -12,6 +12,7 @@
   gap: 0px 30px;
 }
 .veiculo h1 {
+  font-weight: bold;
   margin: 70px 0px;
   color: var(--cor-0);
   font-size: 4.5rem;
@@ -44,6 +45,7 @@
 /* PRODUTOS */
 
 .slide-produtos h1 {
+  font-weight: bold;
   padding: 30px 50px;
   font-size: 4.5rem;
 }
@@ -54,7 +56,7 @@
   margin: 0 20px;
   gap: 40px;
 }
-.slide-produtos div figure img {
+.slide-produtos div figure a img {
   display: block;
   object-fit: cover;
   height: 400px;
@@ -108,9 +110,9 @@
 .tech div span {
   color: var(--cor-1);
   font-size: 2rem;
-  gap: 20px;
 }
 .tech div h1 {
+  font-weight: bold;
   margin: 20px 0;
   font-size: 4.5rem;
   color: var(--cor-0);
@@ -171,7 +173,8 @@
 /* PARCEIROS */
 
 .parceiros h1 {
-  margin: 50px 0;
+  font-weight: bold;
+  margin: 50px 50px;
   font-size: 4.5rem;
 }
 .parceiros div {
