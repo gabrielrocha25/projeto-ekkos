@@ -230,7 +230,10 @@
 }
 
 /* IMGS */
-
+.albert-main-img {
+  transform: scale(1.5);
+  object-position: -100px -20px;
+}
 .albert {
   object-position: -45px -5px;
   transform: scale(1.5);
