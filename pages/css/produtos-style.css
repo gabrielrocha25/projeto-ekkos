@@ -1,1 +1,92 @@
 @import url(../../assets/css/import.css);
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+  gap: 40px;
+}
+.container img {
+  border-radius: 5px;
+  max-width: 100%;
+}
+.container h1::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-6);
+  display: block;
+  margin-bottom: 10px;
+}
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.container article {
+  font-size: 1rem;
+  color: var(--cor-2);
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+}
+.vantagem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container div li {
+  padding: 10px 40px;
+  font-size: 1.3rem;
+  color: var(--cor-2);
+  background-position-x: 0px;
+  background-position-y: 5px;
+}
+.vantagem a {
+  padding: 15px 30px;
+  background: linear-gradient(var(--cor-6), var(--cor-7));
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--cor-5);
+  border-radius: 5px;
+}
+.vantagem a:hover {
+  background: linear-gradient(var(--cor-6), var(--cor-8));
+  transition: 500ms;
+}
+.vantagem div {
+  justify-content: right;
+  display: flex;
+  align-self: flex-end;
+}
+.albert {
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-5) 0%);
+}
+.albert-img {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.albert-img img {
+  object-position: -90px -30px;
+  transform: scale(1.5);
+}
+.albert h1 {
+  color: var(--cor-0);
+}
+.albert article,
+.albert div li {
+  color: var(--cor-1);
+}
+.rastreador {
+  background-image: url(../../assets/icons/rastreador.svg);
+  background-repeat: no-repeat;
+}
+.motor {
+  background-image: url(../../assets/icons/eletrica.svg);
+  background-repeat: no-repeat;
+}
+.carbono {
+  background-image: url(../../assets/icons/carbono.svg);
+  background-repeat: no-repeat;
+}
+.velocidade {
+  background-image: url(../../assets/icons/velocidade.svg);
+  background-repeat: no-repeat;
+}
