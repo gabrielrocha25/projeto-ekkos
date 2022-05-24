@@ -31,94 +31,148 @@
             <span>RESPOSTAS EM ATÉ 24H</span>
             <h1>nosso contato<b>.</b></h1>
         </div>
-        <section>
-            <div>
-                <div>
+        <section class="contato-online">
+            <div class="bloco-contato">
+                <div class="contato-dados">
                     <h2>Loja Online</h2>
-                    <div class="local">
-                        Rua Algum Lugar, 99 <br>
-                        Porto Alegre - RS <br>
-                        Brasil - Terra - Via Láctea
+                    <div class="local contato-dados-background">
+                        <p>
+                            Rua Algum Lugar, 99
+                        </p>
+                        <p>
+                            Porto Alegre - RS
+                        </p>
+                        <p>
+                            Brasil - Terra - Via Láctea
+                        </p>
                     </div>
-                    <div class="email">
-                        <a href="emailto:">
-                            contato@ekkos.com
-                        </a>
-                        <a href="emailto:">
-                            assistencia@ekkos.com
-                        </a>
+                    <div class="email contato-dados-background">
+                        <div>
+                            <a href="emailto:">
+                                contato@ekkos.com
+                            </a>
+                        </div>
+                        <div>
+                            <a href="emailto:">
+                                assistencia@ekkos.com
+                            </a>
+                        </div>
                     </div>
-                    <div class="tel">
+                    <div class="tel contato-dados-background">
                         <a href="tel:">
                             +55 51 99999-9999
                         </a>
                     </div>
                     <div class="social">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
+                        <div>
+                            <a href="">
+                                <img src="../assets/icons/instagram-2.svg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <img src="../assets/icons/facebook-2.svg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <img src="../assets/icons/youtube-2.svg" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <form>
-                    <label>Nome</label>
-                    <input type="text" placeholder="Seu nome" required>
-                    <label>Telefone</label>
-                    <input type="tel" placeholder="(99) 9999-9999" required>
-                    <label>Email</label>
-                    <input type="email" placeholder="contato@email.com" required>
-                    <label>Mensagem</label>
-                    <input type="textarea" placeholder="O que você precisa?" required>
-                    <button type="submit">
-                        ENVIAR MENSAGEM
-                    </button>
+                    <div>
+                        <label>Nome</label>
+                        <input type="text" placeholder="Seu nome" required>
+                    </div>
+                    <div>
+                        <label>Telefone</label>
+                        <input type="tel" placeholder="(99) 9999-9999" required>
+                    </div>
+                    <div class="col-2">
+                        <label>Email</label>
+                        <input type="email" placeholder="contato@email.com" required>
+                    </div>
+                    <div class="col-2">
+                        <label>Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" rows="5" placeholder="O que você precisa?"></textarea>
+                    </div>
+                    <div class="col-2">
+                        <button type="submit">
+                            ENVIAR MENSAGEM
+                        </button>
+                    </div>
                 </form>
             </div>
         </section>
-        <section>
+        <section class="contato-local">
             <h2>lojas locais<b>.</b></h2>
-            <div>
-                <picture>
-                    <img src="assets/pictures/POA.png" alt="">
-                    <h3>Porto Alegre</h3>
-                    <div>
-                        <p>
-                            Rua Algum Lugar, 99 - Centro <br>
-                            Porto Alegre - RS
-                        </p>
-                        <p>
-                            <a href="emailto:">
-                                poa@ekkos.com
-                            </a>
-                            <a href="tel:">
-                                +55 51 99999-9999
-                            </a>
-                        </p>
-                        <div class="atendimento">
-                            08-18h de seg à dom
+            <div class="loja-info wrap">
+                <div class="endereco">
+                    <figure>
+                        <img src="../assets/pictures/POA.png" alt="">
+                        <h3>Porto Alegre</h3>
+                        <div class="loja-info">
+                            <div class="loja-local">
+                                <p>
+                                    Rua Algum Lugar, 99 - Centro
+                                </p> <br>
+                                <p>
+                                    Porto Alegre - RS
+                                </p>
+                            </div>
+                            <div class="loja-contato">
+                                <div>
+                                    <a href="emailto:">
+                                        poa@ekkos.com
+                                    </a>
+                                </div><br>
+                                <div>
+                                    <a href="tel:">
+                                        +55 51 99999-9999
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="atendimento">
+                                08-18h de seg à dom
+                            </div>
                         </div>
-                    </div>
-                </picture>
-                <picture>
-                    <img src="assets/pictures/SP.png" alt="">
-                    <h3>São Paulo</h3>
-                    <div>
-                        <p>
-                            Rua Algum Lugar, 99 - Centro <br>
-                            São Paulo - SP
-                        </p>
-                        <p>
-                            <a href="emailto:">
-                                sp@ekkos.com
-                            </a>
-                            <a href="tel:">
-                                +55 11 99999-9999
-                            </a>
-                        </p>
-                        <div class="atendimento">
-                            08-18h de seg à dom
+                    </figure>
+                </div>
+                <div class="endereco">
+                    <figure>
+                        <img src="../assets/pictures/SP.png" alt="">
+                        <h3>São Paulo</h3>
+                        <div class="loja-info">
+                            <div class="loja-local">
+                                <p>
+                                    Rua Algum Lugar, 99 - Centro
+                                </p> <br>
+                                <p>
+                                    São Paulo - RS
+                                </p>
+                            </div>
+                            <div class="loja-contato">
+                                <div>
+                                    <a href="emailto:">
+                                        sp@ekkos.com
+                                    </a>
+                                </div><br>
+                                <div>
+                                    <a href="tel:">
+                                        +55 51 99999-9999
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="atendimento">
+                                08-18h de seg à dom
+                            </div>
                         </div>
-                    </div>
-                </picture>
+                    </figure>
+                </div>
+                </figure>
+            </div>
             </div>
         </section>
     </main>
