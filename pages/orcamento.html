@@ -35,42 +35,126 @@
             <form action="">
                 <div class="orcamento-produto form">
                     <h2>EKKOS OU SEGURO?</h2>
-                    <div class="produto-option">
-                        <div class="option">
-                            <input name="tipo" id="ekkos" type="radio">
-                            <label>Ekkos</label>
+                    <div class="orcamento-option">
+
+                        <input name="tipo" id="ekkos" value="ekkos" type="radio">
+                        <label for="ekkos">Ekkos</label>
+
+                        <input name="tipo" id="seguro" value="seguro" type="radio">
+                        <label for="seguro">Seguro</label>
+
+                        <div class="orcamento-ekkos orcamento-conteudo" id="orcamento-ekkos">
+                            <h2>ESCOLHA O SEU</h2>
+                            <div>
+                                <input value="nikola" name="tipo-option" type="radio" id="nikola">
+                                <label for="nikola">
+                                    Nikola
+                                    <span>
+                                        R$ 9999
+                                    </span>
+                                </label>
+                                <div class="orcamento-detalhes" id="nikola-detalhes">
+                                    <ul>
+                                        <li>
+                                            <img src="../assets/icons/eletrica.svg" alt=""> Motor Elétrico
+                                        </li>
+                                        <li>
+                                            <img src="../assets/icons/carbono.svg" alt=""> Fibra de Carbono
+                                        </li>
+                                        <li>
+                                            <img src="../assets/icons/velocidade.svg" alt=""> 1000 km/h
+                                        </li>
+                                        <li>
+                                            <img src="../assets/icons/rastreador.svg" alt=""> Rastreador
+                                        </li>
+                                    </ul>
+                                    <div>
+                                        <img src="../assets/pictures/nikola.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <input value="albert" name="tipo-option" type="radio" id="albert">
+                                <label for="albert">
+                                    Albert
+                                    <span>
+                                        R$ 9999
+                                    </span>
+                                </label>
+                                <div class="orcamento-detalhes" id="albert-detalhes">
+                                    <ul>
+                                        <li>
+                                            <img src="../assets/icons/eletrica.svg" alt=""> Motor Elétrico
+                                        </li>
+                                        <li>
+                                            <img src="../assets/icons/carbono.svg" alt=""> Fibra de Carbono
+                                        </li>
+                                        <li>
+                                            <img src="../assets/icons/velocidade.svg" alt=""> 1000 km/h
+                                        </li>
+                                        <li>
+                                            <img src="../assets/icons/rastreador.svg" alt=""> Rastreador
+                                        </li>
+                                    </ul>
+                                    <div class="albert">
+                                        <img src="../assets/pictures/albert.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <input value="thomas" name="tipo-option" type="radio" id="thomas">
+                                <label for="thomas">
+                                    Thomas
+                                    <span>
+                                        R$ 9999
+                                    </span>
+                                </label>
+                                <div class="orcamento-detalhes" id="thomas-detalhes">
+                                    <ul>
+                                        <li>
+                                            <img src="../assets/icons/eletrica.svg" alt=""> Motor Elétrico
+                                        </li>
+                                        <li>
+                                            <img src="../assets/icons/carbono.svg" alt=""> Fibra de Carbono
+                                        </li>
+                                        <li>
+                                            <img src="../assets/icons/velocidade.svg" alt=""> 1000 km/h
+                                        </li>
+                                        <li>
+                                            <img src="../assets/icons/rastreador.svg" alt=""> Rastreador
+                                        </li>
+                                    </ul>
+                                    <div>
+                                        <img src="../assets/pictures/thomas.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="option">
-                            <input name="tipo" id="seguro" type="radio">
-                            <label>Seguro</label>
+
+                        <div class="orcamento-plano orcamento-conteudo" id="orcamento-plano">
+                            <h2>ESCOLHA O PLANO</h2>
+                            <div>
+                                <input value="prata" name="tipo-option" type="radio" id="prata">
+                                <label for="prata">
+                                    Prata
+                                    <span>
+                                        R$ 199
+                                    </span>
+                                </label>
+                            </div>
+                            <div>
+                                <input value="ouro" name="tipo-option" type="radio" id="ouro">
+                                <label for="ouro">
+                                    Ouro
+                                    <span>
+                                        R$ 299
+                                    </span>
+                                </label>
+                            </div>
                         </div>
+
                     </div>
-                    <div class="orcamento-ekkos orcamento-option">
-                        <h2>ESCOLHA O SEU</h2>
-                        <div class="col-2 option">
-                            <input name="tipo-option" type="radio">
-                            <label>Nikola</label>
-                        </div>
-                        <div class="col-2 option">
-                            <input name="tipo-option" type="radio">
-                            <label>Albert</label>
-                        </div>
-                        <div class="col-2 option">
-                            <input name="tipo-option" type="radio">
-                            <label>Thomas</label>
-                        </div>
-                    </div>
-                    <div class="orcamento-plano orcamento-option">
-                        <h2>ESCOLHA O PLANO</h2>
-                        <div class="col-2 option">
-                            <input name="tipo-option" type="radio">
-                            <label>Prata</label>
-                        </div>
-                        <div class="col-2 option">
-                            <input name="tipo-option" type="radio">
-                            <label>Ouro</label>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="orcamento-dados form">
                     <h2>DADOS PESSOAIS</h2>
