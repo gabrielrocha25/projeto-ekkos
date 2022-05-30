@@ -1,9 +1,12 @@
 @import url(../../assets/css/import.css);
 
 /* SEGURO */
-
-.seguro {
+.seguro-background {
   background-color: var(--cor-4);
+}
+.seguro {
+  display: flex;
+  flex-direction: column;
   padding: 50px 50px;
 }
 .seguro span {
@@ -88,9 +91,14 @@
 }
 
 /* VANTAGENS */
-.vantagens {
-  padding: 100px 50px;
+
+.vantagens-background {
   background-color: var(--cor-5);
+}
+.vantagens {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 50px;
 }
 .vantagens div {
   display: grid;
@@ -136,6 +144,8 @@
 
 /* PERGUNTAS */
 .perguntas {
+  display: flex;
+  flex-direction: column;
   padding: 60px 0;
 }
 .perguntas h1 {

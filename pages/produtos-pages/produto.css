@@ -1,10 +1,12 @@
 @import url(../../assets/css/import.css);
 
+.produto-background {
+  background-color: var(--cor-4);
+}
 .produto {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 20px 50px;
-  background-color: var(--cor-4);
   padding-bottom: 100px;
 }
 .produto-info {
@@ -30,7 +32,6 @@
   margin: 5px;
   border-radius: 5px;
 }
-
 .produto article {
   line-height: 2rem;
   font-size: 1.5rem;
@@ -135,6 +136,10 @@
 }
 
 /* OUTROS PRODUTOS */
+.outros-produtos {
+  display: flex;
+  flex-direction: column;
+}
 .outros-produtos h1 {
   padding: 80px 50px;
   font-size: 4.5rem;
@@ -182,11 +187,13 @@
   width: 24px;
   transition: width 200ms;
 }
-.seguro {
+.seguro-background {
+  box-shadow: inset 0 120px var(--cor-0), inset 0 -120px var(--cor-5);
   background-color: var(--cor-4);
+}
+.seguro {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  box-shadow: inset 0 120px var(--cor-0), inset 0 -120px var(--cor-5);
   padding: 0 50px;
 }
 .seguro img {
@@ -250,4 +257,10 @@
 }
 .nikola {
   height: 100%;
+}
+.wrap2 {
+  display: flex;
+  justify-content: center;
+  max-width: 1800px;
+  margin: auto;
 }

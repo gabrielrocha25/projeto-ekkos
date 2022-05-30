@@ -1,6 +1,7 @@
 .head {
-  background-color: var(--cor-4);
   padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
 }
 .head span {
   font-size: 1.5rem;
@@ -10,4 +11,7 @@
   font-weight: bold;
   font-size: 4.5rem;
   color: var(--cor-0);
+}
+.head-background {
+  background-color: var(--cor-4);
 }
