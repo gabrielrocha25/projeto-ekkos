@@ -264,3 +264,87 @@
   max-width: 1800px;
   margin: auto;
 }
+
+/* RESPONSIVO */
+
+@media (max-width: 1000px) {
+  .produto {
+    grid-template-columns: 1fr;
+    padding: 20px 50px;
+    padding-bottom: 20px;
+  }
+  .produtos {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+  .produtos div {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .other-img img {
+    display: none;
+  }
+  .albert-main-img {
+    transform: scale(1.5);
+    object-position: -45px -20px;
+  }
+  .compra a {
+    padding: 17px 15px;
+  }
+  .outros-produtos h1 {
+    padding: 20px 50px;
+  }
+  .produtos img {
+    height: 100%;
+  }
+  .seguro figure {
+    display: none;
+  }
+  .seguro-background {
+    box-shadow: inset 0 120px var(--cor-4), inset 0 -120px var(--cor-4);
+    background-color: var(--cor-4);
+  }
+  .seguro h1 {
+    font-size: 2.7rem;
+    margin: 20px 0;
+  }
+  .seguro div {
+    padding: 0;
+  }
+  .seguro-link a {
+    padding: 15px 15px;
+  }
+  .seguro-link {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+  .seguro p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .info-caracteristicas div {
+    padding: 10px 30px;
+    background-position-x: 8px;
+    background-position-y: 8px;
+  }
+  .rastreador,
+  .velocidade,
+  .carbono,
+  .motor {
+    background-size: 17px;
+  }
+  .wrap2 {
+    text-align: center;
+  }
+  .outros-produtos-albert img {
+    transform: scale(1);
+    object-position: 0;
+  }
+  .produtos div a figure {
+    width: 100%;
+    height: 150px;
+  }
+}

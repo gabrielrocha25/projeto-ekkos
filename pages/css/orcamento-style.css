@@ -36,7 +36,7 @@ h2 {
   background-color: var(--cor-5);
   color: var(--cor-1);
   border-radius: 5px 0 0 5px;
-  width: 360px;
+  width: 50%;
 }
 .orcamento-option {
   display: grid;
@@ -99,6 +99,9 @@ h2 {
   pointer-events: none;
 }
 .orcamento-conteudo {
+  margin-top: 80px;
+  width: 28%;
+  position: absolute;
   display: none;
 }
 #ekkos:checked ~ #orcamento-ekkos {
@@ -227,11 +230,10 @@ h2 {
   }
   .orcamento form {
     flex-direction: column;
-    width: 419px;
-    max-width: 419px;
     margin: 0 15px;
   }
   .form {
+    width: 100%;
     padding: 15px 30px;
     margin-bottom: 0px;
   }
@@ -239,6 +241,13 @@ h2 {
     background-color: var(--cor-5);
     color: var(--cor-1);
     border-radius: 5px 5px 0 0;
+    width: 100%;
+  }
+  .orcamento-conteudo {
+    margin-top: 0px;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
   }
   .orcamento-dados {
     background-color: var(--cor-0);
@@ -252,14 +261,23 @@ h2 {
     justify-content: center;
   }
 }
+
 @media (max-width: 550px) {
   .orcamento form {
     flex-direction: column;
-    width: relative;
-    max-width: 80vw;
     margin: 0;
   }
+  .orcamento-conteudo,
+  .form {
+    width: 80%;
+  }
+  .orcamento-conteudo label,
+  .orcamento-conteudo div {
+    max-width: 103%;
+    width: 103%;
+  }
   .orcamento-detalhes {
+    padding: 17px;
     display: flex;
     flex-direction: row;
   }
