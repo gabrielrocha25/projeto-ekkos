@@ -15,3 +15,9 @@
 .head-background {
   background-color: var(--cor-4);
 }
+
+@media (max-width: 800px) {
+  .head {
+    padding: 30px 50px;
+  }
+}

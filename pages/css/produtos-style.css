@@ -94,3 +94,65 @@
   background-image: url(../../assets/icons/velocidade.svg);
   background-repeat: no-repeat;
 }
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 25px;
+  }
+  .container h1 {
+    margin-bottom: 15px;
+  }
+  .container h1::before {
+    content: "";
+    width: 10px;
+    height: 6px;
+    background-color: var(--cor-6);
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+  .container article {
+    margin: 0;
+  }
+  .container div {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container .vantagem {
+    display: flex;
+    justify-content: center;
+  }
+  .container .vantagem ul {
+    display: grid;
+    margin: 15px 0;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container .vantagem li {
+    padding: 20px 0;
+    padding-left: 40px;
+    background-position-x: 0px;
+    background-position-y: 10px;
+  }
+  .vantagem div a {
+    font-size: 1.7rem;
+  }
+  .albert-background {
+    background: linear-gradient(to right, var(--cor-5) 30%, var(--cor-5) 0%);
+  }
+}
+@media (max-width: 500px) {
+  .albert-img img {
+    object-position: -55px -20px;
+    transform: scale(1.7);
+  }
+}
+@media (max-width: 350px) {
+  .albert-img img {
+    object-position: -40px -15px;
+  }
+}

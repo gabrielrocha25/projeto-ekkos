@@ -120,3 +120,55 @@ footer p {
   font-size: 1.2rem;
   color: var(--cor-1);
 }
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+  html {
+    font-size: 75%;
+  }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 20px 30px;
+  }
+  .footer {
+    padding: 50px 70px;
+    flex-wrap: wrap;
+  }
+  .footer div h1 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 65%;
+  }
+  .header {
+    gap: 10px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0;
+  }
+  .footer h1,
+  .footer h2 {
+    margin-bottom: 20px;
+  }
+  .footer .social {
+    margin-bottom: 20px;
+  }
+  .footer li {
+    text-align: center;
+  }
+  .footer .contato hr {
+    width: 100%;
+  }
+}

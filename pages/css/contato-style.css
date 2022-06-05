@@ -179,3 +179,57 @@ form button:hover {
   border: 2px solid var(--cor-0-1);
   margin-bottom: 60px;
 }
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+  .bloco-contato {
+    font-size: 200%;
+    flex-direction: column;
+    width: 90%;
+  }
+  .bloco-contato h2 {
+    font-size: 150%;
+  }
+  .bloco-contato .local p {
+    font-size: 100%;
+  }
+  .contato-dados {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px 5px 0 0;
+  }
+  .contato-dados-background {
+    background-position-x: 0px;
+    background-position-y: 22px;
+  }
+  .social {
+    padding: 20px;
+    gap: 40px;
+  }
+  .col-2-2 {
+    grid-column: span 2;
+  }
+  .bloco-contato form div label,
+  .bloco-contato form div input,
+  .bloco-contato form div textarea,
+  .bloco-contato form div button {
+    font-size: 100%;
+  }
+  .bloco-contato form .button {
+    text-align: center;
+  }
+  .loja-info {
+    grid-template-columns: 1fr;
+  }
+  .endereco {
+    margin-bottom: 0px;
+  }
+  .endereco figure iframe {
+    height: 50%;
+  }
+  .bloco-contato form {
+    border-radius: 0 0 5px 5px;
+  }
+}

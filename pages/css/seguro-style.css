@@ -183,3 +183,46 @@
   color: var(--cor-2);
   font-size: 1.2rem;
 }
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+  .seguro {
+    padding: 50px 30px;
+  }
+  .seguro div {
+    flex-direction: column;
+  }
+  .seguro div .plano {
+    margin: 20px 0;
+    width: 90%;
+  }
+  .plano div {
+    flex-direction: row;
+  }
+  .vantagens div {
+    grid-template-columns: 1fr;
+  }
+  .vantagens {
+    padding: 50px 50px;
+  }
+  .perguntas {
+    padding: 25px 0;
+  }
+  .perguntas h1 {
+    margin: 20px 50px;
+  }
+  .perguntas ul li {
+    padding: 10px 15px;
+  }
+  .perguntas ul {
+    margin: 20px 25px;
+  }
+  .perguntas ul li h3::before {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 8px;
+    margin-bottom: 3px;
+  }
+}

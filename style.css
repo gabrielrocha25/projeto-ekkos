@@ -47,23 +47,37 @@
 .slide-produtos {
   display: flex;
   flex-direction: column;
+  padding: 0 50px;
 }
 .slide-produtos h1 {
   font-weight: bold;
-  padding: 30px 50px;
+  padding: 30px 0px;
   font-size: 4.5rem;
 }
 .slide-produtos div {
   max-width: 100%;
-  margin: 0 20px;
+  margin: 30px auto;
   gap: 40px;
   display: flex;
+}
+.slide-produtos div ul {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.slide-produtos div ul li figure {
+  margin: 0 0;
+  width: 385px;
 }
 .slide-produtos div figure a img {
   display: block;
   object-fit: cover;
   height: 400px;
   max-width: 100%;
+  width: 100%;
   border-radius: 5px;
 }
 .albert {
@@ -327,4 +341,117 @@
 }
 .plano div .gold-sub:hover {
   background-color: var(--cor-6);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  html {
+    font-size: 70%;
+  }
+
+  /* VEICULO */
+
+  .veiculo {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .veiculo h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .veiculo div {
+    margin: 70px 0;
+  }
+  .veiculo figure img {
+    height: 80%;
+    width: 100%;
+  }
+
+  /* SLIDE */
+
+  .slide-produtos {
+    padding: 0 50px;
+  }
+  .slide-produtos div ul {
+    gap: 10px;
+    max-width: 150%;
+    height: 350px;
+    overflow-y: auto;
+  }
+  .slide-produtos div ul li figure {
+    width: 230px;
+  }
+  .slide-produtos div figure a img {
+    height: 250px;
+  }
+
+  /* TECH */
+
+  .tech-background {
+    box-shadow: inset 0 110px var(--cor-4), inset 0 -120px var(--cor-4);
+  }
+  .tech {
+    flex-direction: column;
+    padding: 15px 50px;
+  }
+  .tech div {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+  .tech figure {
+    display: none;
+  }
+  .tech div div article {
+    margin: 0 0;
+    margin-top: 40px;
+  }
+
+  /* PARCEIROS */
+
+  .parceiros div {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+  }
+  .parceiros div figure img {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* QUOTE */
+
+  .quote {
+    grid-template-columns: 1fr;
+  }
+  .quote figure {
+    height: 200px;
+  }
+  .quote div {
+    padding: 25px;
+  }
+  .quote div p {
+    margin: 0 25px;
+    margin-top: 20px;
+  }
+
+  /* SEGURO */
+
+  .seguro div {
+    flex-direction: column;
+  }
+  .seguro div .plano {
+    margin: 20px 0;
+    width: 90%;
+  }
+  .plano div {
+    flex-direction: row;
+  }
+}
+@media (max-width: 600px) {
+  .slide-produtos div ul li figure {
+    width: 190px;
+  }
 }

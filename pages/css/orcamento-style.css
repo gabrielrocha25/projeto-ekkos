@@ -17,7 +17,7 @@
   margin-bottom: 100px;
   box-shadow: 0 1px 2px var(--cor-3);
 }
-h2::before {
+.form h2::before {
   content: "";
   display: inline-block;
   width: 4px;
@@ -186,9 +186,11 @@ h2 {
 .orcamento-detalhes li img {
   width: 16px;
   margin-right: 8px;
+  object-fit: cover;
 }
 .orcamento-detalhes img {
   max-width: 150px;
+  overflow: hidden;
   border-radius: 5px;
   object-fit: cover;
   margin-left: 8px;
@@ -211,4 +213,67 @@ h2 {
 }
 #thomas:checked ~ #thomas-detalhes {
   display: grid;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1000px) {
+  .col-2-2 {
+    grid-column: span 2;
+  }
+  .orcamento {
+    display: flex;
+    justify-content: center;
+  }
+  .orcamento form {
+    flex-direction: column;
+    width: 419px;
+    max-width: 419px;
+    margin: 0 15px;
+  }
+  .form {
+    padding: 15px 30px;
+    margin-bottom: 0px;
+  }
+  .orcamento-produto {
+    background-color: var(--cor-5);
+    color: var(--cor-1);
+    border-radius: 5px 5px 0 0;
+  }
+  .orcamento-dados {
+    background-color: var(--cor-0);
+    border-radius: 0 0 5px 5px;
+  }
+  .orcamento-detalhes {
+    grid-template-columns: 1fr 1fr;
+  }
+  .botao {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 550px) {
+  .orcamento form {
+    flex-direction: column;
+    width: relative;
+    max-width: 80vw;
+    margin: 0;
+  }
+  .orcamento-detalhes {
+    display: flex;
+    flex-direction: row;
+  }
+  .orcamento-detalhes {
+    display: none;
+    flex-direction: column;
+  }
+  #nikola:checked ~ #nikola-detalhes {
+    display: flex;
+  }
+  #albert:checked ~ #albert-detalhes {
+    display: flex;
+  }
+  #thomas:checked ~ #thomas-detalhes {
+    display: flex;
+  }
 }
