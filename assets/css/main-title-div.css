@@ -17,7 +17,25 @@
 }
 
 @media (max-width: 800px) {
+  .head span {
+    font-size: 1rem;
+  }
+  .head h1 {
+    font-size: 3.5rem;
+    padding: 0;
+  }
   .head {
-    padding: 30px 50px;
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 500px) {
+  .head h1 {
+    font-size: 2.5rem;
+  }
+  .head span {
+    font-size: 0.7rem;
+  }
+  .head {
+    padding: 15px 30px;
   }
 }
