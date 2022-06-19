@@ -42,12 +42,13 @@
 .email div {
   margin-bottom: 15px;
 }
-.social {
+.social-contato ul {
   padding: 30px;
   display: flex;
   flex-direction: row;
   gap: 25px;
 }
+
 .contato-dados-background {
   padding: 20px 30px;
   background-repeat: no-repeat;
@@ -204,7 +205,7 @@ form button:hover {
     background-position-x: 0px;
     background-position-y: 22px;
   }
-  .social {
+  .social-contato {
     padding: 20px;
     gap: 40px;
   }
